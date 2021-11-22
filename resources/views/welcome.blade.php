@@ -61,8 +61,26 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            
+            .flex{
+                display:flex;
+            }
+
+            .items-center{
+                align-items: center;
+            }
+
+            .big{
+                font-size: 3rem;
+            }
+
+            .small{
+                font-size: 1.2rem;
+                margin-left: 1ch;
+            }
         </style>
     </head>
+    <!-- <?php Debugbar::info("Hi");?> -->
     <body>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
@@ -78,20 +96,14 @@
                     @endauth
                 </div>
             @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+            <div class="content" >
+                <div class="title m-b-md flex items-center" style="width:100%; justify-content:center;">
+                    <div class="big">
+                        Node.js >
+                    </div> 
+                    <div class="small">
+                        Laravel
+                    </div>
                 </div>
             </div>
         </div>
