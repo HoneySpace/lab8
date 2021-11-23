@@ -80,7 +80,7 @@
             }
         </style>
     </head>
-    <!-- <?php Debugbar::info("Hi");?> -->
+    <?php Debugbar::info("Hi");?>
     <body>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
